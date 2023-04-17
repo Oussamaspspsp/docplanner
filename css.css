@@ -1,0 +1,232 @@
+*{padding: 0;
+margin: 0;
+}
+
+/* #home {
+    width:268px;height:33px
+} */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.header {
+    position: static;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns:40%, 60%;
+    grid-template-rows: 1;
+}
+
+.header div {
+    font-size: medium;
+    text-align: center;
+    
+}
+
+.one {
+    display: flex;
+    grid-column-start: 2;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 400px;
+    
+}
+
+#home {
+    justify-self: right;
+    margin-top: -10px;
+
+}
+
+/* ---------------------------------------------------Main-------------------------------------- */
+
+.Docplanner-logo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 2em;
+    color: #00b39b;
+}
+
+
+body, main{
+    display: grid;
+    place-items: center;
+}
+.section2 {
+    background-color: rgb(255, 255, 255);    
+    width: 50%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr;   
+    grid-template-columns: repeat(2, 1fr);
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    justify-content: center;
+    align-items: center;
+    margin: 50px;    
+    }
+
+.para1 {
+    display: flex;
+    grid-column-start: 1;
+    justify-content: center;
+    font-size: large;
+    
+}
+
+.para2 {
+    display: flex;
+    grid-column-start: 2;
+    justify-content: center;
+    font-size: large;
+    
+}
+
+.county-drop {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.county-drops {
+    display: none;
+    position: absolute;
+}
+
+.county-drop:hover .county-drops {
+    display: block;
+}
+
+.section3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 50%;
+    gap: 30px;
+    margin: 50px;
+}
+
+.for-patients{
+    flex: 0 0 calc(33.33% - 80px);
+    padding: 20px;
+    text-align: center;
+    background-color: #00b39b;
+    color: #ffffff;
+}
+
+
+i{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 50px;
+}
+
+.for-doctors{
+    flex: 0 0 calc(33.33% - 10px);
+    padding: 20px;
+    text-align: center;
+    background-color: #2768ff;
+    color: #ffffff;
+}
+
+
+.for-clinics{
+    flex: 0 0 calc(33.33% - 10px);
+    padding: 20px;
+    text-align: center;
+    background-color: #000f31;
+    color: #ffffff;
+}
+
+.section4{
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows:  1fr;
+}
+
+h3{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.stats{
+    background-color: rgb(223, 255, 244);
+
+}
+
+.grid{
+   width: 100%;
+   float: none;
+   text-align: center;
+}
+
+.col-2{
+    width: 50%;
+    text-align: center;
+    pad: 5px;
+    float: left;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.offices{
+    padding: 50px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 33%);
+    grid-template-rows: repeat(5, 20%);
+}
+
+.offices__header{
+    text-align: center;
+    font-size: small;
+    grid-column-start: 2;
+}
+
+.offices__header h1{
+    text-align: center;
+
+}
+
+.offices__header p{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-column-end: 3;
+}
+
+.offices__slider{
+    margin-top: 200px;    
+    grid-row-start: 2;
+}
+
+footer{
+    text-align: center;
+    font-size: smaller;
+
+}
